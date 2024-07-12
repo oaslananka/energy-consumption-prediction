@@ -22,11 +22,6 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    # Test aşamasını geçici olarak yorum satırı yapabilirsiniz
-    # - name: Run tests
-    #   run: |
-    #     python -m unittest discover -s tests
-
   deploy:
     runs-on: ubuntu-latest
     needs: build
