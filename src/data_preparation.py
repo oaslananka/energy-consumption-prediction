@@ -8,7 +8,7 @@ def process_data():
     None
     """
 
-    data_path = '../data/raw/ENB2012_data.xlsx'
+    data_path = './data/raw/ENB2012_data.xlsx'
 
     data = pd.read_excel(data_path)
 
@@ -16,7 +16,7 @@ def process_data():
 
     data.isnull().sum()
 
-    processed_data_path = '../data/processed/ENB2012_data_processed.csv'
+    processed_data_path = './data/processed/ENB2012_data_processed.csv'
     data.to_csv(processed_data_path, index=False)
 
 process_data()

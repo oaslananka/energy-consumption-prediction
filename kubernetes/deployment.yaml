@@ -1,6 +1,3 @@
-# This YAML file defines a Kubernetes Deployment for the energy-consumption-prediction application.
-# It specifies the desired state of the deployment, including the number of replicas, selector labels, and container configuration.
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,6 +14,6 @@ spec:
     spec:
       containers:
       - name: energy-consumption-prediction
-        image: your-dockerhub-username/energy-consumption-prediction:latest
+        image: oaslananka/energy-consumption-prediction:latest
         ports:
         - containerPort: 80

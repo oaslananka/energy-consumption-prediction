@@ -17,7 +17,7 @@ def evaluate_model():
     - mse_y2 (float): Mean squared error for the cooling load predictions.
     """
 
-    data_path = '../data/processed/ENB2012_data_processed.csv'
+    data_path = './data/processed/ENB2012_data_processed.csv'
     data = pd.read_csv(data_path)
 
     X = data[['X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7', 'X8']]

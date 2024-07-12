@@ -1,7 +1,3 @@
-# This YAML file defines a Kubernetes Service for the energy-consumption-prediction application.
-# The Service is of type LoadBalancer, which allows external traffic to be routed to the application.
-# The Service listens on port 80 and forwards the traffic to the targetPort 80.
-# The selector specifies that the Service should route traffic to pods with the label "app: energy-consumption-prediction".
 apiVersion: v1
 kind: Service
 metadata:
@@ -13,4 +9,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: LoadBalancer
+      nodePort: 30001
+  type: NodePort
